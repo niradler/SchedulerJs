@@ -80,3 +80,13 @@ get all log event
 `.tasks`
 
 get all tasks
+
+### TODO
+
+- add build in task for HTTP.
+
+- prepare migration files.
+
+- integrate with db mysql/mongo.
+
+- build sass like client.
