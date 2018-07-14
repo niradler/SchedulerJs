@@ -1,18 +1,21 @@
 {
-  "name": "scheduler_jolt",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@niradler55/schedulerjs",
+  "version": "1.0.1",
+  "description": "Scheduler for node js to timing time base tasks.",
+  "author": "Nir Adler",
+  "license": "MIT",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "babel-node": "babel-node --presets=latest",
     "start": "nodemon --exec npm run babel-node -- ./src/index.js",
     "build": "babel src -d dist",
     "mocha": "mocha --compilers js:babel-register",
-    "test": "mocha --compilers js:babel-register --recursive \"./tests/**/*.test.js*\""
+    "test": "mocha --compilers js:babel-register --recursive \"./tests/**/*.test.js*\"",
+    "publish": "npm publish --access=public",
+    "bump": "npm version minor"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["scheduler"],
   "babel": {
     "presets": [
       "latest"

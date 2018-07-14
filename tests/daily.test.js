@@ -17,7 +17,7 @@ describe('one time run', function () {
       onFailed: (e) => console.log(e),
         date: {
             dateString: moment()
-                .add(5, 'seconds')
+                .add(2, 'seconds')
                 .format(),
             format: ''
         },
