@@ -11,10 +11,10 @@ const Scheduler = require('@niradler55/schedulerjs/dist');
 const sch = new Scheduler();
 const task = {
     title: 'example',
-    fn: () => console.log('run every 1 second, success', new Date()),
-    onFailed: (e) => console.log(e),
-    repeatPeriod: 1000,
-    isRepeat: true,
+    fn: () => console.log('run every 1 second, success', new Date()), //function to run
+    onFailed: (e) => console.log(e), //fall back function when primary function crash
+    repeatPeriod: 1000, //repeat period in milliseconds
+    isRepeat: true, // run one time or every time period.
   };
 
   sch.start();
